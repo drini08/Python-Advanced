@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 import pandas as pd
 
-df = pd.read_csv('avgIQpercountry.csv')
+df = pd.read_csv('../lesson 13/kaggle_data/avgIQpercountry.csv')
 
 avg_iq_by_continent = df.groupby('Continent')['Average IQ'].mean()
 
